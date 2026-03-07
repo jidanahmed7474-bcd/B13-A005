@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Issues Tracker</title>
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Outfit:wght@100..900&display=swap"
-    rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="tailwind.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tailwind.css">
 </head>
-<body class="font-family: "Geist", sans-serif;">
-     <!-- LOGIN PAGE -->
-  <div id="login-page">
-    <div class="login-card">
-      <div>
-        <img src="/assets/github-logo.png">
-        <p class="login-logo-text text-center">GitHub Issues Tracker</p>
-      </div>
-      <p class="login-subtitle text-center">Sign in to manage your issues</p>
 
-      <div class="input-group">
-        <label for="username" class="text-[#1F2937]">Username</label>
-        <input type="text" id="username" placeholder="Enter username" autocomplete="off" />
-      </div>
-      <p class="text-[#4A00FF]">Default: admin</p>
-      <div class="input-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter password" />
-      </div>
-      <p class="text-[#4A00FF]">Default: admin123</p>
-      <div class="login-error" id="login-error">❌ Invalid username or password.</div>
-      <button class="login-btn" onclick="handleLogin()">Sign In</button>
+<body class="font-family: " Geist", sans-serif;">
+    <!-- LOGIN PAGE -->
+    <div id="login-page">
+        <div class="login-card">
+            <div class=" flex items-center justify-center">
+                <img src="/assets/github-logo.png">
+            </div>
+            <p class="login-logo-text text-center">GitHub Issues Tracker</p>
 
-      <div class="demo-creds">
-        <p class="text-center">Demo Credentials</p>
-        <div class="text-center">
-          <h2>Username: admin</h2>
-          <h2>Password: admin123</h2>
+            <p class="login-subtitle text-center">Sign in to manage your issues</p>
+
+            <div class="input-group">
+                <label for="username" class="text-[#1F2937]">Username</label>
+                <input type="text" id="username" placeholder="Enter username" autocomplete="off" />
+            </div>
+            <p class="text-[#4A00FF]">Default: admin</p>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" />
+            </div>
+            <p class="text-[#4A00FF]">Default: admin123</p>
+            <div class="login-error" id="login-error">❌ Invalid username or password.</div>
+            <button class="login-btn" onclick="handleLogin()">Sign In</button>
+
+            <div class="demo-creds">
+                <p class="text-center">Demo Credentials</p>
+                <div class="text-center">
+                    <h2>Username: admin</h2>
+                    <h2>Password: admin123</h2>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </body>
+
 </html>
