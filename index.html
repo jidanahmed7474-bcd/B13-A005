@@ -65,6 +65,50 @@
       </div>
     </nav>
 
+     <div class="content">
+      <!-- Search badge -->
+      <div class="search-result-badge" id="search-badge">
+        <span id="search-badge-text"></span>
+        <button class="clear-search" onclick="clearSearch()">✕ Clear</button>
+      </div>
+
+        <!-- Tab section -->
+      <div class="tab-header">
+        <div class="tabs">
+          <button class="tab-btn active" id="tab-all" onclick="switchTab('all')">
+            All
+          </button>
+          <button class="tab-btn" id="tab-open" onclick="switchTab('open')">
+            Open
+          </button>
+          <button class="tab-btn" id="tab-closed" onclick="switchTab('closed')">
+            Closed
+          </button>
+        </div>
+
+        <div class="tab-info-bar">
+          <div class="tab-info-left">
+            <div class="tab-info-icon">
+              <img src="assets/Aperture.png">
+            </div>
+            <div>
+              <div class="tab-info-title" id="tab-info-title">0 Issues</div>
+              <div class="tab-info-sub">Track and manage your project issues</div>
+            </div>
+          </div>
+          <div class="tab-info-right">
+            <span class="status-indicator">
+              <span class="status-dot open"></span>
+              Open
+            </span>
+            <span class="status-indicator">
+              <span class="status-dot closed"></span>
+              Closed
+            </span>
+          </div>
+        </div>
+      </div>
+
     <script src="script.js"></script>
 </body>
 
