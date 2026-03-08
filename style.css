@@ -166,3 +166,43 @@ body {
 .login-btn:hover {
   background: var(--accent-hover);
 }
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+.demo-creds {
+  margin-top: 20px;
+  background: var(--surface2);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.demo-creds p {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.demo-creds span {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--open);
+}
+
+.demo-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.login-error {
+  color: var(--high);
+  font-size: 13px;
+  margin-top: 8px;
+  display: none;
+  font-family: var(--font-mono);
+}

@@ -50,6 +50,20 @@
             </div>
         </div>
     </div>
+
+    <!-- MAIN PAGE -->
+  <div id="main-page">
+    <nav class="navbar">
+      <div class="nav-brand">
+        <img src="assets/github-logo.png">
+        Issues Tracker
+      </div>
+      <div class="nav-search">
+        <input type="text" id="search-input" placeholder="Search issues..."
+          onkeydown="if(event.key==='Enter') doSearch()" />
+        <button class="search-btn" onclick="doSearch()">Search</button>
+      </div>
+    </nav>
 </body>
 
 </html>
