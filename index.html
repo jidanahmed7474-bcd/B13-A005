@@ -109,6 +109,36 @@
         </div>
       </div>
 
+          <!-- Issues Grid / Spinner -->
+      <div id="spinner-wrap" class="spinner-wrap">
+        <div class="spinner"></div>
+      </div>
+      <div class="issues-grid" id="issues-grid" style="display:none;"></div>
+      <div class="empty-state" id="empty-state" style="display:none;">
+        <div style="font-size:48px;">🔍</div>
+        <p>No issues found.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal-overlay" onclick="closeModalOutside(event)">
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title" id="modal-title"></div>
+          <div class="modal-id" id="modal-id"></div>
+        </div>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-desc" id="modal-desc"></div>
+        <div class="modal-grid" id="modal-grid"></div>
+        <div class="modal-labels" id="modal-labels"></div>
+      </div>
+    </div>
+  </div>
+
     <script src="script.js"></script>
 </body>
 
